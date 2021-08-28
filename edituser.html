@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>edituser</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div style="text-align: center;">
+                <h1>Edit User</h1>
+                <div style="font-size: 20px; padding: 2px;">
+                    <label><b>ID :-</b></label>
+                    <label id="userid"></label>
+                    <br>
+                    <label for=""><b>User Name :-</b></label>
+                    <label id="usname"></label>
+                    <br>
+                    <label for=""><b>User E-mail :-</b></label>
+                    <label for="" id="usmail"></label>
+                    <br>
+                    <label for=""><b>User Gender :-</b></label>
+                    <label id="usgender"></label>
+                    <br>
+                    <label for=""><b>User Status :-</b></label>
+                    <label id="usstatus"></label>
+                </div>
+
+            </div>
+            <div>
+                <form action="" id="emyForm">
+                    <div style=" padding-top:5px; padding-left: 60px; ">
+                        <label>Edit E-mail :-</label>
+                        <input type="email" name="email" id="eemail" placeholder="Enter Your Email" required
+                            style="height: 30px; width: 50%;">
+                    </div>
+                    <div style="padding-top:10px; padding-left: 60px; ">
+                        <label style="padding-right: 8px;">Edit Name :- </label>
+                        <input type="text" name="firstname" id="efirstname" placeholder="Enter name" required
+                            style=" height: 30px; width: 50%;">
+                    </div>
+                    </br>
+                    <div id="egender" style="padding-top: 10px; padding-left: 60px;">
+                        <label for="">Edit Gender</label>
+                        <br>
+                          <input type="radio" id="emale" name="gender" value="Male">
+                        <label>Male</label>
+
+                        <br>
+
+                          <input type="radio" name="gender" value="Female">
+                        <label>Female</label>
+                    </div>
+                    </br>
+                    <div style="padding-top: 10px; padding-left: 60px;">
+                        <label for="">User Active/Inactive</label>
+                        <br>
+                        <input id='estatus' value='active' type="checkbox">
+                        <label for="status">Edit Status</label>
+                    </div>
+                    </br>
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="./edituser.js"></script>
+
+</body>
+
+</html>

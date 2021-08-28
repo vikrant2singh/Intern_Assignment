@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<style>
+		button {
+			color: white;
+			background: blue;
+		}
+
+		table,
+		th,
+		td {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding-left: 80px;
+			padding-right: 80px;
+			text-align: center;
+		}
+	</style>
+	<script src="./getuserdetail.js"></script>
+	<script src="./deleteuser.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container" style="text-align: center;">
+		<div class="d-flex justify-content-center">
+			<div class="spinner-border" role="status" id="loading">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		<div class="container">
+			<button class="btn btn-primary" onclick="location.href='./user.html'" value="click here">New User</button>
+			<table id="employees" style="margin-left: auto; margin-right: auto;"></table>
+			<div id="userData"></div>
+			<button onclick="prev()">&laquo;</button>
+			<button id="1">1</button>
+			<button id="2">2</button>
+			<button id="3">3</button>
+			<button onclick="nxt()">&raquo;</button>
+		</div>
+	</div>
+</body>
+
+</html>

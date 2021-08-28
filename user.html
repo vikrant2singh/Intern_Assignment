@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>newuser</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div style="text-align: center;">
+                <h1>New User</h1>
+            </div>
+            <div>
+                <form action="" id="myForm">
+                    <div style=" padding-top:10; padding-left: 60px; ">
+                        <label>E-mail :-</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required
+                            style="height: 30px; width: 50%;">
+                    </div>
+                    <div style="padding-top: 10px; padding-left: 60px;">
+                        <label style="padding-right: 8px;">Name :-</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter name" required
+                            style=" height: 30px; width: 50%;">
+                    </div>
+                    </br>
+                    <div id="gender" style="padding-top: 10px; padding-left: 60px;">
+                        <label for="">Select Gender</label>
+                        <br>
+                          <input type="radio" id="male" name="gender" value="Male">
+                        <label>Male</label>
+
+                        <br>
+
+                          <input type="radio" name="gender" value="Female">
+                        <label>Female</label>
+                    </div>
+                    </br>
+                    <div style="padding-top: 10px; padding-left: 60px;">
+                        <label for="">User Active/Inactive</label>
+                        <br>
+                        <input id='status' value='active' type="checkbox">
+                        <label for="status">Status</label>
+                    </div>
+                    </br>
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="./user.js"></script>
+</body>
+
+</html>
